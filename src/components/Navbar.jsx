@@ -13,7 +13,7 @@ const Navabar = () => {
   return (
     <div className='flex justify-between px-4 items-center text-center mt-3.5 bg-[var(--isabelline)]'>
       <Link to='/' className='flex items-center transition-all duration-300 hover:opacity-90 hover:scale-105 active:scale-100'>      
-        <img className='h-[80px] w-[100px]' alt='img' src='/public/logo/logo (1).png' />
+        <img className='h-[80px] w-[100px]' alt='img' src='./logo/logo (1).png' />
         <h1 className='text-2xl font-serif text-[var(--space-cadet)] font-bold tracking-wide'>Travel Easy</h1>
       </Link>
 
