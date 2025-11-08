@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+/* Color Scheme Variables */
+:root {
+  --space-cadet: #22223b;
+  --ultra-violet: #4a4e69;
+  --rose-quartz: #9a8c98;
+  --pale-dogwood: #c9ada7;
+  --isabelline: #f2e9e4;
+
+--salmon-pink: #fc9ca2ff;
+--light-red: #fb747dff;
+--folly: #fa4c58ff;
+--imperial-red: #f92432ff;
+--red-cmyk: #e30613ff;
+--engineering-orange: #c70512ff;
+--penn-red: #9f040eff;
+--barn-red: #77030bff;
+--chocolate-cosmos: #500207ff;
+}
+
+/* Apply colors to Tailwind theme */
+@theme {
+  --color-space-cadet: var(--space-cadet);
+  --color-ultra-violet: var(--ultra-violet);
+  --color-rose-quartz: var(--rose-quartz);
+  --color-pale-dogwood: var(--pale-dogwood);
+  --color-isabelline: var(--isabelline);
+}
+
+/* Base styles for better text visibility */
+body {
+  background-color: var(--isabelline);
+  /* color: var(--space-cadet); */
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Improve text readability - but not for footer */
+body > *:not(footer) p,
+body > *:not(footer) span:not([class*="text-"]),
+body > *:not(footer) div:not([class*="text-"]) {
+  color: var(--space-cadet);
+}
+
+/* Ensure headings are bold and visible - but not for footer */
+body > *:not(footer) h1,
+body > *:not(footer) h2,
+body > *:not(footer) h3,
+body > *:not(footer) h4,
+body > *:not(footer) h5,
+body > *:not(footer) h6 {
+  color: var(--space-cadet);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Improve link visibility - but not for footer */
+body > *:not(footer) a:not([class*="text-"]) {
+  color: var(--space-cadet);
+  font-weight: 500;
+}
+
+/* Footer specific styles to ensure visibility */
+footer {
+  background-color: var(--space-cadet) !important;
+  color: var(--isabelline) !important;
+}
+
+footer * {
+  color: var(--isabelline) !important;
+}
+
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6 {
+  color: var(--pale-dogwood) !important;
+}
+
+footer a {
+  color: var(--isabelline) !important;
+  transition: all 0.2s ease !important;
+}
+
+footer a:hover {
+  color: var(--pale-dogwood) !important;
+  transform: translateX(4px);
+}
+
+footer svg {
+  fill: var(--isabelline) !important;
+  transition: all 0.2s ease !important;
+}
+
+footer a:hover svg {
+  fill: var(--pale-dogwood) !important;
+  transform: scale(1.1);
+}
