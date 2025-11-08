@@ -8,7 +8,7 @@ const activities = [
     {
       title: "Yoga",
       description: "Join relaxing yoga sessions to rejuvenate and balance your body and mind.",
-      image: "../../public/yoga.jpg",
+      image: "../../yoga.jpg",
     },
     {
       title: "Gym",
@@ -23,7 +23,7 @@ const activities = [
     {
       title: "Sports",
       description: "Engage in local sports and activities for memorable group experiences.",
-      image: "../../public/sports.avif",
+      image: "../../sports.avif",
     }
   ]
 
